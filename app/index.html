@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>果物キャッチ！ - 岩を避けて果物を集めよう</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>🍎 果物キャッチ！ 🪨</h1>
+      <div class="score-board">
+        <span class="score-label">スコア</span>
+        <span id="score" class="score-value">0</span>
+      </div>
+    </header>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="600" height="500"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h2>果物キャッチ！</h2>
+        <p>← → で移動、スペース / ↑ / W でジャンプ</p>
+        <p>🍎 果物を取るとポイントアップ！</p>
+        <p>✨ 金色の果物で地面の穴が少し修復！</p>
+        <p>🪨 岩に当たるor穴に落ちるとゲームオーバー！</p>
+        <button id="startBtn" class="btn">ゲームスタート</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>ゲームオーバー</h2>
+        <p>スコア: <span id="finalScore">0</span></p>
+        <button id="restartBtn" class="btn">もう一度プレイ</button>
+      </div>
+    </div>
+
+    <footer class="controls">
+      <span>← → または A / D で移動　スペース / ↑ / W でジャンプ</span>
+    </footer>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
