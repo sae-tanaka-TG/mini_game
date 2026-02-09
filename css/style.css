@@ -62,7 +62,7 @@ body {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(180deg, #87ceeb 0%, #98d8aa 70%, #7cb342 100%);
+  background: #ffffff;
   box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.2);
 }
 
